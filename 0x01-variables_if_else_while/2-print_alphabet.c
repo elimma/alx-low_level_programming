@@ -5,10 +5,11 @@
  *
  * Return 0 on success
  */
-int main()
+int main(void)
 {
-	char ch;
-	for (ch ='a';ch <= 'z'; ++ch)
+	char ch ;
+
+	for (ch = 'a'; ch <= 'z'; ++ch)
 	{
 		putchar(ch);
 	}

@@ -5,13 +5,13 @@
  *
  * Return: 0 on success
  */
-int main()
+int main(void)
 {
 	char ch;
-	
-	for (ch ='a' ; ch <= 'z'; ++ch)
+
+	for (ch = 'a' ; ch <= 'z'; ++ch)
 	{
-		if ((ch == 'q' || ch == 'e') ==0)
+		if ((ch == 'q' || ch == 'e') == 0)
 		{
 			putchar(ch);
 		}

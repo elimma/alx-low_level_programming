@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /*
- * main - prints all the alphabets in lowercase
+ * main - Entry point
  *
  * Return 0 on success
  */
@@ -13,5 +13,6 @@ int main(void)
 	{
 		putchar(ch);
 	}
+	putchar('\n');
 	return (0);
 }

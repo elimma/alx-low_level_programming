@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 /*
- * main - prints all the alphabets in lowercase 
+ * main - prints all the alphabets in lowercase
  *
  * Return 0 on success
  */
 int main(void)
 {
-	char ch ;
+	char ch;
 
 	for (ch = 'a'; ch <= 'z'; ++ch)
 	{

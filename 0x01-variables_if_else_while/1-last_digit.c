@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
- * main - Determine if a random number  is greather, less or 0
+ * main - Determine if a random number  is greater, less or 0
  *
  * Return: 0 on success
  */
 int main(void)
 {
 	int n;
-	
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
@@ -20,7 +20,7 @@ int main(void)
 	}
 	else if (n % 10 > 5)
 	{
-		printf("Last digit of %d is %d and is greather tan 5\n", n, n % 10);
+		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
 	}
 	else
 	{

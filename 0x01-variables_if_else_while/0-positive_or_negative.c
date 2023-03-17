@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
+ **Entry main point
  ** more headers goes there
  ** betty style doc for function main goes there
  **/

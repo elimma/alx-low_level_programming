@@ -2,6 +2,8 @@
 /**
  * _abs - computes the ansolute value of an integer
  *
+ * @number: output
+ *
  * Return: 0 on success
  */
 int _abs(int number)

@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_line - draws a straight line
+ * @n: input
  *
  * Return: 0 on success
  */

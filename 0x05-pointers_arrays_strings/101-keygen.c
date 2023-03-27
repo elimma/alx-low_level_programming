@@ -8,17 +8,18 @@
  */
 int main(void)
 {
-	int i;
-	char password[10+1];
-	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-	const size_t charset_size = sizeof(charset) - 1;
-	srand(time(NULL));
+	int counter = 0;
+	char randChar;
+	int passLength;
 
-	for (i = 0; i < 11 ; i++)
+	printf("enter the length of your password  \n");
+	scanf("%d", &passLength);
+	while (counter < passLength)
 	{
-		password[i] = charset[rand() % charset_size];
+		srand(time(NULL));
+		randChar = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+		printf("%c", randChar);
+		counter++;
 	}
-	password[10] = '\0';
-	printf("%s\n", password);
-       	return 0;
+	return (0);
 }

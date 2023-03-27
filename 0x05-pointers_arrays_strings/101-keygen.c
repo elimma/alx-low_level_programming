@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
  * main - random password
  *
@@ -8,18 +9,16 @@
  */
 int main(void)
 {
-	int counter = 0;
-	char randChar;
-	int passLength;
+	int p;
+	char c;
 
-	printf("enter the length of your password  \n");
-	scanf("%d", &passLength);
-	while (counter < passLength)
+	srand(time(NULL));
+	while (p <= 2645)
 	{
-		srand(time(NULL));
-		randChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"[random () % 62];
-		printf("%c", randChar);
-		counter++;
+		c = rand() % 128;
+		p += c;
+		putchar(c);
 	}
+	putchar(2772 - p);
 	return (0);
 }

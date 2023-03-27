@@ -17,7 +17,7 @@ int main(void)
 	while (counter < passLength)
 	{
 		srand(time(NULL));
-		randChar = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+		randChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"[random () % 62];
 		printf("%c", randChar);
 		counter++;
 	}

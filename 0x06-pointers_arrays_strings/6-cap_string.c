@@ -2,7 +2,7 @@
 #include <ctype.h>
 /**
  * cap_string - capitalizes all words
- * @sttr: input
+ * @str: input
  * Return: str
  */
 char *cap_string(char *str)

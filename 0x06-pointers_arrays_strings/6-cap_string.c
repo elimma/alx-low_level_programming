@@ -1,5 +1,6 @@
 #include "main.h"
 #include <ctype.h>
+#include <string.h>
 /**
  * cap_string - capitalizes all words
  * @str: input
@@ -7,21 +8,20 @@
  */
 char *cap_string(char *str)
 {
-	int cap_words = 1;
-	char *p = str;
+	int cap_nxt = 1;
+	int i;
 
-	while (*p != '\0')
+	for (i = 0; str[i] != '\0';i++)
 	{
-		if (cap_words && isalpha(*p))
+		if (cap_nxt && isalpha(str[i]))
 		{
-			*p = toupper(*p);
-			cap_words = 0;
+			str[i] = toupper(str[i]);
+			cap_nxt = 0;
 		}
-		else if (isspace(*p) || ispunct(*p))
+		else if (strchr(" \t\n,;.?\"(){}", str[i]) != NULL)
 		{
-			cap_words = 1;
+			cap_nxt = 1;
 		}
-		p++;
 	}
 	return (str);
 }

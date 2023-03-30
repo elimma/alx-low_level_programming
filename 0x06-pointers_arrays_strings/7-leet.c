@@ -2,12 +2,12 @@
 /**
  * *leet - encodes a string
  *
- * @str: input 
+ * @str: input
  * Return: result
  */
 char *leet(char *str)
 {
-	char *result= str;
+	char *result = str;
 	char *letters = "aeotlAEOTL";
 	char *replace = "4307143071";
 	int i;

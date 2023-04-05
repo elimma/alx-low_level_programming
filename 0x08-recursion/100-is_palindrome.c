@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * strlen_reic - returns the length
+ * strlen_rec - returns the length
  * @s:string
  * Return: length of the string
  */

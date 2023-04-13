@@ -3,23 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _memset - fills memory with a cons bytes
- * @s: memory area
- * @b: char to cpy
- * @n: number of times
- * Return: on success
- */
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i;
-
-	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
-	return (s);
-}
-/**
  * _calloc - allocates memory for an array
  * @nmemb: input
  * @size: size

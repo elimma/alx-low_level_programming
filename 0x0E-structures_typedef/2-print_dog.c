@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * print_d - print a struct dog
+ * print_dog - print a struct dog
  * @d: struct dog to print
  */
-void print_d(struct dog *d)
+void print_dog(struct dog *d)
 {
 if (d == NULL)
 return;

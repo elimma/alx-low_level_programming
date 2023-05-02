@@ -10,26 +10,32 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *slow, *fast;
+	listint_t *tortoise, *hare;
 
-	if (head == NULL)
+	if (head == NULL || head->next == NULL)
 		return (NULL);
-	slow = head;
-	fast = head->next;
-	while (fast != NULL && fast->next != NULL)
+
+	tortoise = head->next;
+	hare = (head->next)->next;
+
+	while (hare)
 	{
-		if (slow == fast)
+		if (tortoise == hare)
 		{
-			slow = head;
-			while (slow != fast)
+			tortoise = head;
+
+			while (tortoise != hare)
 			{
-				slow = slow->next;
-				fast = fast->next;
+				tortoise = tortoise->next;
+				hare = hare->next;
 			}
-			return (slow);
+
+			return (tortoise);
 		}
-		slow = slow->next;
-		fast = fast->next->next;
+
+		tortoise = tortoise->next;
+		hare = (hare->next)->next;
 	}
+
 	return (NULL);
 }
